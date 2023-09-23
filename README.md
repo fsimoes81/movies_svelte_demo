@@ -1,22 +1,32 @@
-# create-svelte
+# SvelteKit | The Movie DB
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+This project was based on tutorial originally published on Youtube called [SvelteKit For Beginners | Movie App Tutorial](https://www.youtube.com/watch?v=ydR_M0fw9Xc&t=5s).
 
-## Creating a project
+Since the tutorial was published SvelteKit has changed, then I updated the code for the tutorial.
 
-If you're seeing this, you've probably already done this step. Congrats!
+In order to execute this project fallow the instruction below:
+
+## Clone this repository 
 
 ```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+    git clone https://github.com/fsimoes81/movies_svelte_demo.git
 ```
 
-## Developing
+### Initialize the project
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+```bash
+npm create init
+```
+
+### Add enviroment variables
+
+Create a .env file and add the VITE_TMDB_TOKEN=Bearer <your token here>
+
+You need to create a user account on https://www.themoviedb.org/ and generate an API Token.
+
+### Developing
+
+Once you've created a project and installed dependencies with `npm init` (or `pnpm init` or `yarn`), start a development server:
 
 ```bash
 npm run dev
@@ -25,7 +35,7 @@ npm run dev
 npm run dev -- --open
 ```
 
-## Building
+### Building
 
 To create a production version of your app:
 
